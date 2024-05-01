@@ -1,6 +1,6 @@
 module MIA_P1_201907343
 
-go 1.22.1
+go 1.22
 
 require (
 	github.com/gorilla/mux v1.8.0 // require
