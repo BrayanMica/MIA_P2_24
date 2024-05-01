@@ -45,16 +45,7 @@ func addToResponseList() {
 	newResponseList.List = append(newResponseList.List, "C.disk")
 	newResponseList.List = append(newResponseList.List, "D.disk")
 	newResponseList.List = append(newResponseList.List, "E.disk")
-	files, err := ioutil.ReadDir("../test")
-	if err != nil {
-		log.Fatal(err)
-	}
 
-	for _, file := range files {
-		if !file.IsDir() {
-			newResponseList.List = append(newResponseList.List, file.Name())
-		}
-	}
 }
 
 func postMethod(w http.ResponseWriter, r *http.Request) {
