@@ -1,0 +1,21 @@
+/* App.css */
+.link {
+    color: white;
+}
+
+.link a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px; /* Ajusta este valor según tus necesidades */
+    font-family: Arial, sans-serif; /* Ajusta este valor según tus necesidades */
+}
+
+.link:hover {
+    background-color: blue;
+}
+
+ul {
+    list-style: none;
+}
