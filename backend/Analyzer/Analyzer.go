@@ -40,6 +40,11 @@ var newResponseList responseList
 var continuar bool = false
 
 func addToResponseList() {
+	newResponseList.List = append(newResponseList.List, "A.disk")
+	newResponseList.List = append(newResponseList.List, "B.disk")
+	newResponseList.List = append(newResponseList.List, "C.disk")
+	newResponseList.List = append(newResponseList.List, "D.disk")
+	newResponseList.List = append(newResponseList.List, "E.disk")
 	files, err := ioutil.ReadDir("../test")
 	if err != nil {
 		log.Fatal(err)
